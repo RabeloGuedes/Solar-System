@@ -7,7 +7,7 @@ import './App.css';
 class App extends React.Component {
   render() {
     return (
-      <section>
+      <section className="app-section">
         <Header />
         <SolarSystem />
         <Missions />
