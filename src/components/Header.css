@@ -1,0 +1,47 @@
+:root {
+	--gradient: linear-gradient(
+		45deg,
+		rgba(98, 98, 98, 0.52),
+		rgba(98, 98, 98, 0.765),
+		gold,
+		rgba(98, 98, 98, 0.765),
+		rgba(98, 98, 98, 0.52)
+	);
+}
+
+.header-title {
+	font-size: 5em;
+	font-weight: bold;
+	color: transparent;
+	background-image: var(--gradient);
+	background-clip: text;
+	background-size: 800%;
+	text-align: center;
+	margin-top: 0.5em;
+	text-shadow: 0 0 5px rgba(0, 0, 0, 0.289);
+	animation: sun-spin infinite 10s alternate ease-in-out;
+}
+
+@keyframes sun-spin {
+	0% {
+		background-position: left;
+		text-shadow: 0 0 5px rgba(0, 0, 0, 0.289);
+	}
+	50% {
+		text-shadow: 0 0 5px rgba(255, 217, 0, 0.55),
+		2px 2px 10px rgba(255, 217, 0, 0.732);
+	}
+	100% {
+		background-position: right;
+		text-shadow: 0 0 5px rgba(0, 0, 0, 0.289);
+	}
+}
+
+.planets-title {
+	font-size: 3em;
+	font-weight: bold;
+	color: rgba(0, 0, 0, 0.639);
+	text-align: center;
+	margin-top: 0.5em;
+	text-shadow: 0 0 5px rgba(0, 0, 0, 0.289);
+}
